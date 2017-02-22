@@ -1,0 +1,60 @@
+
+ var awesomeThoughts = "This shit is awesome."
+ var funThoughts = awesomeThoughts.replace( 'awesome', 'fun' )
+
+var name = 'El Dood'
+var role = 'Duke of Dev'
+
+let formattedName = HTMLheaderName.replace( '%data%', name )
+let formattedRole = HTMLheaderRole.replace( '%data%', role )
+
+var skills = [ 'awesomeness', 'programming', 'JS' ]
+
+$('#main').append( funThoughts )
+$('#header').prepend( formattedRole )
+$('#header').prepend( formattedName )
+$('#main').append( skills )
+
+var bio = {
+  "name" : name,
+  "role" : role,
+  "contact" : {
+    "mobile" : "951-816-0486",
+    "github" : "fryymann715"
+  },
+  "skills" : skills
+}
+
+var work = {
+  "position" : "Apprentice",
+  "years worked" : ".5",
+  "city" : "oakland"
+}
+work.employer = "LG"
+
+var education = {
+  "schools" : [
+    {
+      "name" : "Palomar College",
+       "city" : "San Marco, CA",
+       "major" : ["swim", "surfing", "leisure-studies"]
+    },
+    {
+      "name" : "MVHS",
+      "city" : "Murrieta",
+      "major" : ["leisure-studies"]
+    }
+  ],
+  "online-courses" : [
+    {
+      "school" : "Udacity",
+      "course" : "IPND"
+    }
+  ]
+}
+
+
+bio.contact.email = "ideans715@gmail.com"
+
+$('#main').append( education['name'] )
+$('#main').append( work.employer )
